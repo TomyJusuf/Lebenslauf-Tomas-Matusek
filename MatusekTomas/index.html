@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <head name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+  </head>
+
+<body>
+  <!-- Navbar -->
+  <navbar>
+    <nav id="myNav">
+      <h1>FRONTEND WEB DEVELOPER</h1>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round" onclick="myFunction()"></span>
+      </label>
+    </nav>
+  </navbar>
+
+  <!-- *** Button-scrolling ***  -->
+  <Button id="buttonClickPart_1" onclick="myButton()">Überraschung</Button>
+
+  <div class="newWindow">
+    <h1>You watched my CV </h1>
+    <Button id="buttonClickPart_2" onclick="myButton()">For End click here</Button>
+  </div>
+  <!-- Body of my CV -->
+  <div id="body_text">
+
+    <!-- Personal-info  Start-->
+    <div id="title_info">
+      <h1>Lebenslauf</h1>
+      <img class="profile_image" onclick="myButton()" src="IMG-20230521-WA0006.jpg" alt="">
+
+      <div class="title_info_person">
+        <ul>
+          <h1>Persönliche Informationen</h1>
+        </ul>
+        <ul>
+          <li><span>Name:</span></li>
+          <li>Tomas Matusek</li>
+        </ul>
+        <ul>
+          <li><span>Geburtsdatum:</span></li>
+          <li>29/12/1987</li>
+        </ul>
+        <ul>
+          <li><span>Nationalität:</span></li>
+          <li>Tschechische</li>
+        </ul>
+        <ul>
+          <li><span>Wohnort:</span></li>
+          <li>Villach Stadt</li>
+        </ul>
+        <ul>
+          <li><span>Familienstand:</span></li>
+          <td>Verheiratet</td>
+        </ul>
+        <ul>
+          <li><span>Email:</span></li>
+          <li>TomasMatusek@seznam.cz</li>
+        </ul>
+        <ul>
+          <li><span>Handynummer:</span></li>
+          <li>+43 677 64035317</li>
+        </ul>
+        </ul>
+      </div>
+    </div>
+    <!-- Personal-info End -->
+
+    <!-- Education-info Start -->
+    <div id="title_school">
+      <h1>Grundschule - Ausbildung - Matura</h1>
+      <div class="title_info_school">
+        <ul>
+          <li><span>Grundschule:</span></li>
+          <li>1994-2003 T. G. Masarigue Grundschule - Tschechien</li>
+        </ul>
+        <ul>
+          <li><span>Ausbildung:</span></li>
+          <li>2003-2006 Bauschule Dachdecker - Tschechien</li>
+        </ul>
+        <ul>
+          <li><span>Matura:</span></li>
+          <li>2006-2008 Technische Schule Geschäft - Tschechien</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Education-info End -->
+
+    <!-- Programing-info Start -->
+    <div id="title_programierung">
+      <h1>PROGRAMIERUNG SPRACHEN</h1>
+      <p>Seit 2021 interessiere ich mich für das Programmieren und habe selbstgelernt:</p>
+      <p>
+        ( Html - Css - Scss - Java Script - GitHub )
+      </p>
+      <div class="tag_logo">
+        <i id="brand" class="fa-brands  fa-html5 fa-8x"></i>
+        <i id="brand" class="fa-brands  fa-sass fa-8x"></i>
+        <i id="brand" class="fa-brands  fa-js fa-8x"></i>
+        <i id="brand" class="fa-brands fa-4 fa-github fa-8x"></i>
+      </div>
+    </div>
+    <!-- Programing-info End -->
+
+    <!-- Language-info Start -->
+    <div id="title_national_sprache">
+      <h1>FREMDSPRACHEN</h1>
+      <div class="title_info_sprache">
+        <ul>
+          <li><span>Tschechien:</span>Muttersprace</li>
+        </ul>
+        <ul>
+          <li><span>Englisch:</span>fremdsprache</li>
+        </ul>
+        <ul>
+          <li><span>Deutche:</span>Grundkentness B1</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Language-info End -->
+
+    <!-- Job-experience-info Start -->
+    <div id="title_beruf">
+      <h1>Berufserfahrungen</h1>
+      <ul>
+        <li>2021 - 2023 3M Dreherai - Osterraich</li>
+      </ul>
+      <ul>
+        <li>7 Jahre Werkzeugemann</li>
+      </ul>
+      <ul>
+        <li>2 Jahre Dachdecker</li>
+      </ul>
+    </div>
+    <!-- Job-experience-info End-->
+
+    <!-- Hobies-info Start -->
+    <div id="title_hobies">
+      <h1>Hobbys</h1>
+      <p>Programierung, Radfahren, Lesen, Neue Fähigkeiten erlernen, Reisen Selbstbildung ..</p>
+    </div>
+    <!-- Hobies-info End -->
+  </div>
+  <!-- Body-CV End -->
+
+
+  <!-- Footer-info -->
+  <footer id="footer">
+    <p>Creator TomasMatusek</p>
+    <a href="http://https://github.com/TomyJusuf">
+      <i class="fa-brands fa-github fa-2x"></i>
+    </a>
+  </footer>
+  <!-- Footer-info End -->
+
+  <!-- Javascript link -->
+  <script src="index.js"></script>
+
+</html>

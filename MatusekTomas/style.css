@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary: rgb(219, 115, 45);
+  --secondary: #1fadd1;
+}
+
+/* COMMENT SECTION */
+/* ***** Navbar Start ***** */
+/* ***** Body_of_my_CV Start ***** */
+/* **** PersonaL_info Start **** */
+/* **** Title_info_person Start */
+/* **** Education-info Start **** */
+/* **** Programing-info Start **** */
+/* **** Language-info Start **** */
+/* **** Job-experience-info Start **** */
+/* **** Hobies-info Start **** */
+/* **** Footer-info Start **** */
+/* **** Toggle Bar Dark-Light mode *******/
+/* **** Toggle bar button **** */
+/* **** Suprice window **** */
+/* **** Button stick (scrolling)with window **** */
+
+h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+span {
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+/* ***** Navbar Start ***** */
+nav {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+}
+
+nav > h1 {
+  color: var(--primary);
+  filter: brightness(285%);
+  letter-spacing: 3px;
+  font-size: 25px;
+}
+/* **** Navbar End **** */
+
+/* ***** Body_of_my_CV Start ***** */
+#body_text {
+  width: 800px;
+  margin: 0 auto;
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+}
+.body_text_dark_mode {
+  width: 800px;
+  margin: 0 auto;
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  background-color: rgba(235, 239, 240, 0.103);
+  box-shadow: 10px -5px 55px #163a55;
+}
+/*  **** Body_of_my_CV End **** */
+
+/*   **** Personal_info Start **** */
+#title_info {
+  width: 750px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px auto;
+}
+#title_info > h1 {
+  margin: 50px 50px 0px 30px;
+  padding-top: 50px;
+  text-align: start;
+  font-size: 75px;
+  color: var(--primary);
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+}
+
+/*  **** Title_info_person Start */
+.title_info_person {
+  justify-content: center;
+  width: 680px;
+}
+.title_info_person > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.title_info_person > ul > h1 {
+  margin-top: 50px;
+}
+
+/* **** Title_info_person End*/
+
+/*  **** Education-info Start **** */
+#title_school {
+  margin: 30px auto;
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#title_school > ul > li {
+  display: flex;
+  justify-content: space-between;
+}
+
+#title_school > h1 {
+  margin-top: 50px;
+}
+.title_info_school {
+  justify-content: center;
+  width: 600px;
+}
+.title_info_school > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+/*  **** Education-info End **** */
+
+/*  **** Programing-info Start **** */
+#title_programierung {
+  margin: 30px auto;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#title_programierung > h1 {
+  text-align: start;
+  margin-top: 50px;
+}
+
+.tag_logo {
+  width: 600px;
+  margin: 100px auto;
+  text-align: center;
+}
+.tag_logo > .fa-brands {
+  margin: 0 5px;
+}
+/*  **** Programing-info End **** */
+
+/*  **** Language-info Start **** */
+#title_national_sprache {
+  margin: 70px auto;
+  width: 600px;
+}
+.title_info_sprache {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  flex-wrap: wrap;
+}
+.title_info_sprache > ul {
+  list-style: none;
+}
+#title_national_sprache > h1 {
+  text-align: start;
+}
+.title_info_programierung_sprache {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  width: 250px;
+}
+.title_info_programierung_sprache > ul {
+  list-style: none;
+}
+
+/*  **** Language-info End **** */
+
+/*  **** Job-experience-info Start **** */
+#title_beruf {
+  margin: 50px auto 10px;
+  width: 600px;
+}
+
+#title_beruf > ul {
+  list-style: none;
+}
+
+/*  **** Job-experience-info End **** */
+
+/*  **** Hobies-info Start **** */
+#title_hobies {
+  margin: 80px auto;
+  padding-bottom: 55px;
+  width: 600px;
+}
+/*  **** Hobies-info End **** */
+
+/*  **** Footer-info Start **** */
+footer {
+  display: flex;
+  background-color: var(--primary);
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+}
+footer > a > .fa-brands {
+  margin-left: 10px;
+  color: #fff;
+}
+/*  **** Footer-info End **** */
+
+/*  <----- **** Toggle Bar Dark-Light mode ****** -----> */
+
+/* **** Dark - Light MODE **** */
+.dark-mode {
+  background: linear-gradient(
+    12deg,
+    rgb(10, 9, 39) 32%,
+    rgba(17, 147, 213, 1) 95%
+  );
+  color: rgb(207, 242, 245);
+}
+.nav_dark_mode {
+  background-color: var(--secondary);
+}
+.nav_dark_mode > h1 {
+  color: var(--secondary);
+  filter: lighten(150%);
+}
+.shadowEffect > .tag_logo {
+  color: rgb(240, 232, 225);
+  filter: drop-shadow(0 0 0.95rem rgb(109, 155, 158));
+}
+#body_text > .color_title > h1 {
+  color: var(--secondary);
+  filter: brightness(381%);
+}
+
+/*  **** Toggle bar button **** */
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 64px;
+  height: 34px;
+  margin-left: 85%;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--primary);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider::before {
+  display: flex;
+  align-content: center;
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 1px;
+  bottom: 2px;
+  background: var(--primary);
+  filter: brightness(185%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #b0cce2;
+  border: 2px solid rgb(224, 217, 217);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #117acf;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  background: var(--secondary);
+  filter: brightness(55%);
+}
+
+/* ** Rounded sliders ** */
+.slider.round {
+  border-radius: 34px;
+  border: solid #ddd4d4 2px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*  ** Prifile picture **  */
+.profile_image {
+  margin-right: 60px;
+  margin-top: 50px;
+  display: flex;
+  position: relative;
+  border-radius: 50%;
+  width: 180px;
+  height: 190px;
+  cursor: pointer;
+}
+
+/*  **** Suprice window **** */
+.newWindow {
+  display: none;
+  /* position: fixed; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 300px;
+  z-index: 1000;
+  background-image: url(67753625b9fa0507b2dfcb335c00c371.gif);
+  margin: 100px auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  box-shadow: 5px -7px 5px #333030bd;
+  border: #163a55 2px solid;
+  top: 1%;
+}
+
+.newWindow > h1 {
+  width: 100%;
+  text-align: center;
+  margin-top: 4%;
+  color: #4b4511;
+  font-size: 25px;
+}
+.toggleNewWindow {
+  display: inline-block;
+  position: absolute;
+  z-index: 50;
+  margin: 50px 30%;
+  top: 0%;
+  position: fixed;
+}
+
+/* **** Button stick (scrolling)with window **** */
+#buttonClickPart_1 {
+  display: block;
+  position: fixed;
+  top: 90%;
+  left: 72%;
+  width: 120px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  font-size: 10px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: var(--primary);
+  filter: brightness(150%);
+  font-size: 15px;
+  box-shadow: 5px 5px 5px rgb(97, 92, 92);
+  cursor: pointer;
+  z-index: 100;
+}
+#buttonClickPart_2 {
+  display: block;
+  width: 180px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  margin-top: 50%;
+  margin-left: 35%;
+  border-radius: 5px;
+  background-color: var(--primary);
+  filter: brightness(150%);
+  box-shadow: 5px -5px 5px rgb(97, 92, 92);
+  font-size: 15px;
+  cursor: pointer;
+}
