@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=Poppins:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=Poppins:wght@400;500&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 :root {
-  --primary: rgb(219, 115, 45);
-  --secondary: #1fadd1;
+  --primary: rgb(193, 179, 169);
+  --secondary: #464d4f;
 }
 
 /* COMMENT SECTION */
@@ -59,16 +59,17 @@ nav > h1 {
 /* ***** Body_of_my_CV Start ***** */
 #body_text {
   width: 800px;
-  margin: 0 auto;
+  margin: 10px auto;
   backdrop-filter: blur(10px);
-  border-radius: 25px;
+  border-radius: 15px;
+  background: rgb(235, 235, 230);
 }
 .body_text_dark_mode {
   width: 800px;
   margin: 0 auto;
   backdrop-filter: blur(10px);
   border-radius: 25px;
-  background-color: rgba(235, 239, 240, 0.103);
+  background-color: rgba(46, 51, 53, 0.103);
   box-shadow: 10px -5px 55px #163a55;
 }
 /*  **** Body_of_my_CV End **** */
@@ -79,22 +80,31 @@ nav > h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 30px auto;
+  margin: 0px auto;
 }
-#title_info > h1 {
-  margin: 50px 50px 0px 30px;
-  padding-top: 50px;
-  text-align: start;
-  font-size: 75px;
+#title_info > .name_box {
+  display: inline-block;
+  flex-wrap: wrap;
+
+  width: 450px;
+}
+#title_info > .name_box > h1 {
+  margin-top: 50px;
+  /* padding-top: 50px; */
+  /* text-align: start; */
+  font-size: 55px;
   color: var(--primary);
-  font-family: "Nanum Myeongjo", serif;
-  font-weight: 800;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+#title_info > .name_box > ul > li {
+  list-style: none;
 }
 
 /*  **** Title_info_person Start */
 .title_info_person {
   justify-content: center;
-  width: 680px;
+  width: 720px;
 }
 .title_info_person > ul {
   list-style: none;
@@ -104,16 +114,24 @@ nav > h1 {
 .title_info_person > ul > h1 {
   margin-top: 50px;
 }
+.title_info_person > ul > li > a {
+  color: darkblue;
+  font-weight: 500;
+}
 
 /* **** Title_info_person End*/
-
+.title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 /*  **** Education-info Start **** */
 #title_school {
   margin: 30px auto;
-  width: 700px;
+  width: 720px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 #title_school > ul > li {
   display: flex;
@@ -125,19 +143,23 @@ nav > h1 {
 }
 .title_info_school {
   justify-content: center;
-  width: 600px;
+  width: 720px;
 }
 .title_info_school > ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
+.title_info_school > ul > li > a {
+  color: darkblue;
+  font-weight: 500;
+}
 /*  **** Education-info End **** */
 
 /*  **** Programing-info Start **** */
 #title_programierung {
   margin: 30px auto;
-  width: 600px;
+  width: 720px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -146,6 +168,9 @@ nav > h1 {
   margin-top: 50px;
 }
 
+#title_programierung > ul {
+  margin-top: 25px;
+}
 .tag_logo {
   width: 600px;
   margin: 100px auto;
@@ -154,12 +179,20 @@ nav > h1 {
 .tag_logo > .fa-brands {
   margin: 0 5px;
 }
+
+.btn_skill {
+  padding: 3px 5px;
+  border-radius: 5px;
+  background-color: #1fadd1;
+  margin: 2px;
+}
+
 /*  **** Programing-info End **** */
 
 /*  **** Language-info Start **** */
 #title_national_sprache {
-  margin: 70px auto;
-  width: 600px;
+  margin: 20px auto;
+  width: 720px;
 }
 .title_info_sprache {
   display: flex;
@@ -188,7 +221,7 @@ nav > h1 {
 /*  **** Job-experience-info Start **** */
 #title_beruf {
   margin: 50px auto 10px;
-  width: 600px;
+  width: 720px;
 }
 
 #title_beruf > ul {
@@ -199,9 +232,9 @@ nav > h1 {
 
 /*  **** Hobies-info Start **** */
 #title_hobies {
-  margin: 80px auto;
+  margin: 30px auto;
   padding-bottom: 55px;
-  width: 600px;
+  width: 720px;
 }
 /*  **** Hobies-info End **** */
 
@@ -226,12 +259,8 @@ footer > a > .fa-brands {
 
 /* **** Dark - Light MODE **** */
 .dark-mode {
-  background: linear-gradient(
-    12deg,
-    rgb(10, 9, 39) 32%,
-    rgba(17, 147, 213, 1) 95%
-  );
-  color: rgb(207, 242, 245);
+  background: linear-gradient(12deg, rgb(10, 9, 39) 32%, rgb(36, 78, 99) 95%);
+  color: rgb(42, 46, 47);
 }
 .nav_dark_mode {
   background-color: var(--secondary);
@@ -241,12 +270,12 @@ footer > a > .fa-brands {
   filter: lighten(150%);
 }
 .shadowEffect > .tag_logo {
-  color: rgb(240, 232, 225);
-  filter: drop-shadow(0 0 0.95rem rgb(109, 155, 158));
+  color: rgb(100, 96, 92);
+  filter: drop-shadow(0 0 0.95rem rgb(164, 206, 209));
 }
 #body_text > .color_title > h1 {
   color: var(--secondary);
-  filter: brightness(381%);
+  /* filter: brightness(81%); */
 }
 
 /*  **** Toggle bar button **** */
@@ -271,7 +300,8 @@ footer > a > .fa-brands {
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--primary);
+  /* background: var(--primary); */
+
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -280,19 +310,20 @@ footer > a > .fa-brands {
   display: flex;
   align-content: center;
   position: absolute;
-  content: "";
+  content: '';
   height: 26px;
   width: 26px;
   left: 1px;
   bottom: 2px;
-  background: var(--primary);
+  /* background: var(--primary); */
+  background: #000;
   filter: brightness(185%);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #b0cce2;
+  background-color: #1c3d57;
   border: 2px solid rgb(224, 217, 217);
 }
 
@@ -304,14 +335,16 @@ input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
-  background: var(--secondary);
+  /* background: var(--secondary); */
+
   filter: brightness(55%);
 }
 
 /* ** Rounded sliders ** */
-.slider.round {
+.round {
   border-radius: 34px;
-  border: solid #ddd4d4 2px;
+  border: solid #343131 2px;
+  background: #fff;
 }
 
 .slider.round:before {
@@ -324,7 +357,7 @@ input:checked + .slider:before {
   margin-top: 50px;
   display: flex;
   position: relative;
-  border-radius: 50%;
+  border-radius: 10%;
   width: 180px;
   height: 190px;
   cursor: pointer;
@@ -370,15 +403,18 @@ input:checked + .slider:before {
 #buttonClickPart_1 {
   display: block;
   position: fixed;
-  top: 90%;
-  left: 72%;
-  width: 120px;
+  top: 93%;
+  left: 75%;
+  /* width: 120px; */
   height: 40px;
   border: none;
-  color: #fff;
+  color: #443e3e;
   font-size: 10px;
   text-transform: uppercase;
   border-radius: 5px;
+  border: 1px solid var(--secondary);
+  width: auto;
+  padding: 0 20px;
   background-color: var(--primary);
   filter: brightness(150%);
   font-size: 15px;
@@ -391,11 +427,12 @@ input:checked + .slider:before {
   width: 180px;
   height: 40px;
   border: none;
-  color: #fff;
+  color: #454141;
   margin-top: 50%;
   margin-left: 35%;
   border-radius: 5px;
   background-color: var(--primary);
+  border: 1px solid var(--secondary);
   filter: brightness(150%);
   box-shadow: 5px -5px 5px rgb(97, 92, 92);
   font-size: 15px;
